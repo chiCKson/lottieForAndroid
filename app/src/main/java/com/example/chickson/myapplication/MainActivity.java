@@ -16,12 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         showProgressBar();
+        showAnimation();
     }
 
     private void showProgressBar() {
         final Dialog dialog = new Dialog(this); // Context, this, etc.
         dialog.setContentView(R.layout.dialog_layout);
-dialog.setCancelable(false);
+        dialog.setCancelable(false);
         dialog.show();
     }
 
